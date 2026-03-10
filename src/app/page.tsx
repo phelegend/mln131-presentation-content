@@ -286,14 +286,14 @@ export default function Home() {
         <div className="section-inner">
           <div className="reveal">
             <div className="section-label">Bản chất Dân chủ XHCN</div>
-            <h2 className="section-title">3 Phương diện Bản chất</h2>
+            <h2 className="section-title">Phương diện Bản chất</h2>
             <p className="section-subtitle">Dân chủ XHCN là nền dân chủ mà mọi quyền lực thuộc về nhân dân, được thực hiện thông qua Nhà nước pháp quyền XHCN dưới sự lãnh đạo của Đảng Cộng sản.</p>
             <div className="section-divider"></div>
           </div>
           <div className="pillars-grid">
-            <div className="pillar-card reveal"><div className="pillar-number">01</div><h3>Bản chất Chính trị</h3><p>Mang bản chất của giai cấp công nhân, có tính nhân dân rộng rãi và tính dân tộc sâu sắc. Thực hiện cơ chế nhất nguyên chính trị, do Đảng Cộng sản lãnh đạo. Nhân dân là chủ thể quyền lực nhà nước, tham gia vào quản lý nhà nước.</p></div>
-            <div className="pillar-card reveal"><div className="pillar-number">02</div><h3>Bản chất Kinh tế</h3><p>Dựa trên chế độ sở hữu xã hội (công hữu) về các tư liệu sản xuất chủ yếu. Nhân dân là chủ thể phát triển lực lượng sản xuất và là người thụ hưởng lợi ích kinh tế.</p></div>
-            <div className="pillar-card reveal"><div className="pillar-number">03</div><h3>Bản chất Tư tưởng - Văn hóa - Xã hội</h3><p>Lấy chủ nghĩa Mác - Lênin làm hệ tư tưởng chủ đạo. Thực hiện giải phóng con người triệt để, phát triển toàn diện cá nhân và thực hiện quyền tự do, bình đẳng.</p></div>
+            <div className="pillar-card reveal"><h3>Bản chất Chính trị</h3><p>Mang bản chất của giai cấp công nhân, có tính nhân dân rộng rãi và tính dân tộc sâu sắc. Thực hiện cơ chế nhất nguyên chính trị, do Đảng Cộng sản lãnh đạo. Nhân dân là chủ thể quyền lực nhà nước, tham gia vào quản lý nhà nước.</p></div>
+            <div className="pillar-card reveal"><h3>Bản chất Kinh tế</h3><p>Dựa trên chế độ sở hữu xã hội (công hữu) về các tư liệu sản xuất chủ yếu. Nhân dân là chủ thể phát triển lực lượng sản xuất và là người thụ hưởng lợi ích kinh tế.</p></div>
+            <div className="pillar-card reveal"><h3>Bản chất Tư tưởng - Văn hóa - Xã hội</h3><p>Lấy chủ nghĩa Mác - Lênin làm hệ tư tưởng chủ đạo. Thực hiện giải phóng con người triệt để, phát triển toàn diện cá nhân và thực hiện quyền tự do, bình đẳng.</p></div>
           </div>
         </div>
       </section>
@@ -339,7 +339,48 @@ export default function Home() {
         </div>
       </section>
 
-      <footer><p>Bài trình bày môn <span>MLN131</span> — Chủ nghĩa xã hội khoa học</p></footer>
+      <footer>
+        <p>Bài trình bày môn <span>MLN131</span> — Chủ nghĩa xã hội khoa học</p>
+        
+        <div style={{marginTop:"2rem", padding:"2rem", background:"rgba(201,168,76,0.04)", border:"1px solid rgba(201,168,76,0.1)", borderRadius:"12px", textAlign:"left", maxWidth:"700px", margin:"2rem auto 0"}}>
+          <p style={{color:"#c9a84c", fontFamily:"'Playfair Display',serif", fontSize:"1rem", marginBottom:"1rem", textAlign:"center"}}>Minh bạch về việc sử dụng AI</p>
+          
+          <div style={{display:"grid", gridTemplateColumns:"1fr auto auto", gap:".5rem .8rem", fontSize:".8rem", lineHeight:"1.8"}}>
+            <span style={{color:"#e8d48b", fontWeight:600}}>Hạng mục</span>
+            <span style={{color:"#e8d48b", fontWeight:600, textAlign:"center"}}>Thực hiện</span>
+            <span style={{color:"#e8d48b", fontWeight:600, textAlign:"center"}}>Tỷ lệ AI</span>
+            
+            <span style={{color:"#a89e8c"}}>Nội dung bài trình bày</span>
+            <span style={{color:"#e8e0d0", textAlign:"center"}}>Sinh viên</span>
+            <span style={{color:"#e8e0d0", textAlign:"center"}}>0%</span>
+            
+            <span style={{color:"#a89e8c"}}>Hình ảnh minh họa</span>
+            <span style={{color:"#e8e0d0", textAlign:"center"}}>Sinh viên sưu tầm</span>
+            <span style={{color:"#e8e0d0", textAlign:"center"}}>0%</span>
+            
+            <span style={{color:"#a89e8c"}}>Bố cục &amp; thiết kế giao diện</span>
+            <span style={{color:"#e8e0d0", textAlign:"center"}}>AI (Claude)</span>
+            <span style={{color:"#e8e0d0", textAlign:"center"}}>~90%</span>
+            
+            <span style={{color:"#a89e8c"}}>Lập trình HTML/CSS/JS</span>
+            <span style={{color:"#e8e0d0", textAlign:"center"}}>AI (Claude)</span>
+            <span style={{color:"#e8e0d0", textAlign:"center"}}>100%</span>
+            
+            <span style={{color:"#a89e8c"}}>Hiệu ứng &amp; animation</span>
+            <span style={{color:"#e8e0d0", textAlign:"center"}}>AI (Claude)</span>
+            <span style={{color:"#e8e0d0", textAlign:"center"}}>100%</span>
+            
+            <span style={{color:"#a89e8c"}}>Chỉ đạo nội dung &amp; chọn ảnh</span>
+            <span style={{color:"#e8e0d0", textAlign:"center"}}>Sinh viên</span>
+            <span style={{color:"#e8e0d0", textAlign:"center"}}>0%</span>
+          </div>
+          
+          <p style={{marginTop:"1.2rem", fontSize:".75rem", color:"#a89e8c", textAlign:"center", borderTop:"1px solid rgba(201,168,76,0.1)", paddingTop:"1rem"}}>
+            Công cụ AI sử dụng: Claude (Anthropic) — Hỗ trợ thiết kế giao diện và viết code.<br/>
+            Toàn bộ nội dung học thuật, hình ảnh và ý tưởng trình bày do sinh viên thực hiện.
+          </p>
+        </div>
+      </footer>
     </>
   );
 }
