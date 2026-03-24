@@ -414,11 +414,21 @@ export default function Home() {
                   <td className="tag-student">Sinh viên</td>
                   <td>0%</td>
                 </tr>
+                <tr>
+                  <td>Minigame (lập trình)</td>
+                  <td className="tag-ai">AI (Claude)</td>
+                  <td>100%</td>
+                </tr>
+                <tr>
+                  <td>Minigame (ý tưởng &amp; nội dung)</td>
+                  <td className="tag-student">Sinh viên</td>
+                  <td>0%</td>
+                </tr>
               </tbody>
             </table>
             <p className="ai-note">
-              Công cụ AI sử dụng: Claude (Anthropic) — Hỗ trợ thiết kế giao diện và viết code.<br />
-              Toàn bộ nội dung học thuật, hình ảnh và ý tưởng trình bày do sinh viên thực hiện.
+              Công cụ AI sử dụng: Claude (Anthropic) — Hỗ trợ thiết kế giao diện, viết code và lập trình minigame.<br />
+              Toàn bộ nội dung học thuật, hình ảnh, ý tưởng trình bày và ý tưởng minigame do sinh viên thực hiện.
             </p>
           </div>
         </div>
