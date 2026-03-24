@@ -161,6 +161,32 @@ export default function Home() {
         }
         .cta-block h3 { font-family:'Playfair Display',serif; font-size:1.5rem; color:var(--cream); margin-bottom:.75rem; }
         .cta-block p { font-family:'Crimson Pro',serif; font-style:italic; font-size:1.15rem; color:var(--gold-light); }
+        /* AI Transparency */
+        .ai-transparency { border-top:1px solid rgba(201,168,76,.1); }
+        .ai-transparency .section-title { font-size:clamp(1.4rem,2.5vw,2rem); }
+        .ai-table {
+          width:100%; border-collapse:collapse; margin-bottom:2rem;
+        }
+        .ai-table thead tr {
+          border-bottom:1px solid rgba(201,168,76,.3);
+        }
+        .ai-table th {
+          font-weight:600; font-size:.75rem; letter-spacing:3px; text-transform:uppercase;
+          color:var(--gold); padding:.75rem 1rem; text-align:left;
+        }
+        .ai-table th:not(:first-child) { text-align:right; }
+        .ai-table td {
+          padding:.85rem 1rem; font-size:.95rem; color:var(--text-muted);
+          border-bottom:1px solid rgba(201,168,76,.06);
+        }
+        .ai-table td:not(:first-child) { text-align:right; }
+        .ai-table tbody tr:hover td { color:var(--text-light); background:rgba(201,168,76,.03); }
+        .ai-table .tag-ai { color:var(--gold-light); font-weight:600; }
+        .ai-table .tag-student { color:var(--text-light); }
+        .ai-note {
+          text-align:center; font-family:'Crimson Pro',serif; font-size:.95rem;
+          color:var(--text-muted); line-height:1.8;
+        }
         footer { text-align:center; padding:3rem 2rem; border-top:1px solid rgba(201,168,76,.1); color:var(--text-muted); font-size:.85rem; }
         footer span { color:var(--gold); }
         @keyframes fadeUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
@@ -173,6 +199,7 @@ export default function Home() {
           .timeline{padding-left:2rem} .tl-item{padding-left:1rem}
           .step-card{flex-direction:column;gap:.5rem}
           .alert-box{padding:2rem 1.5rem}
+          .ai-table th, .ai-table td { padding:.65rem .5rem; font-size:.85rem; }
         }
       `}</style>
 
@@ -335,6 +362,64 @@ export default function Home() {
           <div className="cta-block reveal">
             <h3>Vậy trách nhiệm của bạn trong kỷ nguyên hiện nay là gì?</h3>
             <p>Hãy suy ngẫm</p>
+          </div>
+        </div>
+      </section>
+
+      {/* MINH BẠCH AI */}
+      <section className="ai-transparency">
+        <div className="section-inner">
+          <div className="reveal">
+            <div className="section-label">Công khai</div>
+            <h2 className="section-title">Minh bạch về việc sử dụng AI</h2>
+            <div className="section-divider"></div>
+          </div>
+          <div className="reveal">
+            <table className="ai-table">
+              <thead>
+                <tr>
+                  <th>Hạng mục</th>
+                  <th>Thực hiện</th>
+                  <th>Tỷ lệ AI</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Nội dung bài trình bày</td>
+                  <td className="tag-student">Sinh viên</td>
+                  <td>0%</td>
+                </tr>
+                <tr>
+                  <td>Hình ảnh minh họa</td>
+                  <td className="tag-student">Sinh viên sưu tầm</td>
+                  <td>0%</td>
+                </tr>
+                <tr>
+                  <td>Bố cục &amp; thiết kế giao diện</td>
+                  <td className="tag-ai">AI (Claude)</td>
+                  <td>~90%</td>
+                </tr>
+                <tr>
+                  <td>Lập trình HTML/CSS/JS</td>
+                  <td className="tag-ai">AI (Claude)</td>
+                  <td>100%</td>
+                </tr>
+                <tr>
+                  <td>Hiệu ứng &amp; animation</td>
+                  <td className="tag-ai">AI (Claude)</td>
+                  <td>100%</td>
+                </tr>
+                <tr>
+                  <td>Chỉ đạo nội dung &amp; chọn ảnh</td>
+                  <td className="tag-student">Sinh viên</td>
+                  <td>0%</td>
+                </tr>
+              </tbody>
+            </table>
+            <p className="ai-note">
+              Công cụ AI sử dụng: Claude (Anthropic) — Hỗ trợ thiết kế giao diện và viết code.<br />
+              Toàn bộ nội dung học thuật, hình ảnh và ý tưởng trình bày do sinh viên thực hiện.
+            </p>
           </div>
         </div>
       </section>
